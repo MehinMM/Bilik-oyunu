@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+@font-face {
+    font-family: _h1;
+    src: url(/Fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: _p;
+    src: url(/Fonts/Poppins-Regular.ttf);
+}
+
+section{
+    min-height:100vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   section .container{
+    width: 50%;
+    height: 600px;
+    max-width: 350px;
+    border-radius: 10px;
+    background-color:#9F7FFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+   
+}
+section nav{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
+  
+   nav input{
+    display: none;
+   }
+
+   nav label{
+    width: 40px;
+    height: 40px;
+    background-color: #c4b5f0;
+    border-radius: 50%;
+    border: 2px solid white;
+   }
+
+   
+   meter::-webkit-meter-bar{
+    background-color:white;
+    width: 90px;
+    height: 10px;
+    box-shadow: 1px 1px 15px rgba(241, 231, 231,0.8),
+    -1px -1px 15px rgba(241, 231, 231,0.8);
+    
+   }
+
+   meter::-webkit-meter-optimum-value{
+    background-color: #f88542;
+    color: #f88542;
+    border-radius: 10px;
+   }
+ 
+   nav span{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin-left: -7px;
+    position: relative;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    border-radius: 40%;
+    border: 1px solid white;
+    background-color: #f88542;
+    box-shadow: 2px 2px 15px rgba(241, 231, 231,0.8),
+    -2px -2px 15px rgba(241, 231, 231,0.8);
+   }
+
+   nav div p{
+    font-family: _p;
+    font-size: 14px;
+    color: white;
+   }
+   nav div b{
+    font-family: _h1;
+    font-size: 16px;
+    color: white;
+   }
+
+   section .decoration{
+    width: 100%;
+    height: 300px;
+    margin-top: -40px;
+    background-image: url(/icon/swords.png);
+    background-size: 70%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+   }
+
+
+   .decoration .line{
+    width: 100px;
+    position: absolute;
+    right: -20px;
+    top: 0px;
+   }
+
+   .line2{
+    width: 100px;
+    position: absolute;
+    left: -20px;
+    bottom: 100px;
+   
+   }
+
+   .circle2{
+    width: 20px;
+    position: absolute;
+    right: 20px;
+    bottom: 130px;
+   
+   }
+   .decoration .circle{
+    width: 20px;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+   }
+
+
+.decoration .left{
+   position: absolute;
+   left: -20px;
+   top: 170px;
+   width: 70px;
+   height: 40px;
+   background-color: #c4b5f0;
+   border: none;
+   color: white;
+   text-align: right;
+   border-radius: 20px;
+   box-shadow: 2px 2px 4px #8c67fa;
+}
+.left i{
+    margin-right: 15px;
+}
+
+.decoration .right{
+    position: absolute;
+    right: -20px;
+    top: 170px;
+    width: 70px;
+    height: 40px;
+    background-color: #FF9051;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px #f88542
+    
+}
+
+.decoration h1{
+    text-align: center;
+    cursor: pointer;
+    margin-top: 230px;
+    font-family: _h1;
+    color: white;
+    font-size: 24px;
+    line-height: 36px;
+}
+.decoration h1 a{
+    color: white;
+}
+
+.right i{
+    margin-right: 15px;
+}
+
+
+
+
+
+   section .contact{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin-top: -20px;
+   }
+
+
+   .contact .book{
+    background-color:#09CACA;
+   }
+   .contact .profil{
+    background-color:#FF9051;
+   }
+
+
+   .contact .profil, .contact .book {
+    border: 1px solid white;
+    margin-left: 10px;
+    width: 55px;
+    height: 55px;
+    border-radius: 35%;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0,0.5);
+
+   }
+
+   .contact img{
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+   }
+
+   @media (max-width:450px){
+    section .container{
+        width: 80%;
+    }
+}
+
+@media (max-width:300px){
+    section .container{
+        width: 100%;
+    }
+}
